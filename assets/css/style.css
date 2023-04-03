@@ -702,8 +702,10 @@ section {
   position: relative;
 }
 .portfolio-details .portfolio-extended img{
+  margin: auto;
+  display: block;
   padding-top: 30px;
-  width: 55vw;
+  width: 75vw;
 }
 .portfolio-details .portfolio-extended h2 {
   font-size: 26px;
@@ -711,6 +713,8 @@ section {
   padding: 30px 0 30px 0;
 }
 .portfolio-details .portfolio-extended iframe {
+  margin: auto;
+  display: block;
   width: 55vw;
   height: 75vh;
   padding: 30px 0 30px 0;
