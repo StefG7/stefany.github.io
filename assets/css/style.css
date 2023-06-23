@@ -11,6 +11,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  overflow: scroll;
+  /* overflow-y: hidden; Hide scrollbars */
 }
 
 a {
@@ -24,7 +26,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Geologica", sans-serif;
+  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
@@ -271,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #45505b;
   margin: 15px 0 0 0;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Geologica", sans-serif;
 }
 #hero p span {
   color: #0563bb;
@@ -419,7 +422,7 @@ section {
 .facts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
@@ -691,7 +694,7 @@ section {
   margin-top: 10px;
 }
 .portfolio-details .portfolio-description {
-  padding-top: 35px;
+  padding-top: 1.5vh;
 }
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
@@ -723,6 +726,31 @@ section {
   height: 75vh;
   padding: 30px 0 30px 0;
 }
+
+.background {
+  width: 100%;
+  /* background: url("../img/headers/path-header.png") top right no-repeat; */
+  background-size: cover;
+  position: relative;
+}
+
+.buttons {
+  font-size: 4vh;
+  padding:  0.6rem 1rem 0.6rem 1rem;
+  /* padding: 10px; */
+  border-radius: 50%;
+  background: #0563bb;
+  color: #fff;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.buttons:hover {
+  background: #0678e3;
+  color: #fff;
+  text-decoration: none;
+}
+
 
 /*--------------------------------------------------------------
 # Services
