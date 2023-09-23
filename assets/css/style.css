@@ -11,6 +11,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  overflow: scroll;
+  /* overflow-y: hidden; Hide scrollbars */
 }
 
 a {
@@ -24,7 +26,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Geologica", sans-serif;
+  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
@@ -271,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #45505b;
   margin: 15px 0 0 0;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Geologica", sans-serif;
 }
 #hero p span {
   color: #0563bb;
@@ -356,7 +359,7 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 2rem;
   color: #728394;
 }
 .about .content ul {
@@ -372,10 +375,13 @@ section {
   margin-right: 10px;
 }
 .about .content ul i {
-  font-size: 16px;
+  font-size: 1.2rem;
   margin-right: 5px;
   color: #0563bb;
   line-height: 0;
+}
+.about .content p {
+  font-size: 1.2rem;
 }
 .about .content p:last-child {
   margin-bottom: 0;
@@ -416,7 +422,7 @@ section {
 .facts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
@@ -581,8 +587,8 @@ section {
   position: absolute;
   top: 3vh;
   left: 3vh;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
+  border-top: 3px solid #a3c0dc;
+  border-left: 3px solid #a3c0dc;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -594,19 +600,19 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 0.4vh solid #d7dce1;
-  border-right: 0.4vh solid #d7dce1;
+  border-bottom: 0.4vh solid #a3c0dc;
+  border-right: 0.4vh solid #a3c0dc;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 1.7vh;
+  font-size: 1.9vh;
   color: #45505b;
-  font-weight: 600;
+  font-weight: 650;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #45505b;
-  font-size: 1.2vh;
+  font-size: 1.5vh;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -669,7 +675,8 @@ section {
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
+  box-shadow: 0px 5px 10px rgba(203, 112, 59, 0.28);
+  background-color: rgba(173, 204, 255, 0.367);
 }
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
@@ -687,7 +694,7 @@ section {
   margin-top: 10px;
 }
 .portfolio-details .portfolio-description {
-  padding-top: 30px;
+  padding-top: 1.5vh;
 }
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
@@ -702,8 +709,10 @@ section {
   position: relative;
 }
 .portfolio-details .portfolio-extended img{
+  margin: auto;
+  display: block;
   padding-top: 30px;
-  width: 55vw;
+  width: 75vw;
 }
 .portfolio-details .portfolio-extended h2 {
   font-size: 26px;
@@ -711,10 +720,37 @@ section {
   padding: 30px 0 30px 0;
 }
 .portfolio-details .portfolio-extended iframe {
+  margin: auto;
+  display: block;
   width: 55vw;
   height: 75vh;
   padding: 30px 0 30px 0;
 }
+
+.background {
+  width: 100%;
+  /* background: url("../img/headers/path-header.png") top right no-repeat; */
+  background-size: cover;
+  position: relative;
+}
+
+.buttons {
+  font-size: 4vh;
+  padding:  0.6rem 1rem 0.6rem 1rem;
+  /* padding: 10px; */
+  border-radius: 50%;
+  background: #0563bb;
+  color: #fff;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.buttons:hover {
+  background: #0678e3;
+  color: #fff;
+  text-decoration: none;
+}
+
 
 /*--------------------------------------------------------------
 # Services
@@ -1013,6 +1049,21 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/*--------------------------------------------------------------
+# Videos
+--------------------------------------------------------------*/
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*--------------------------------------------------------------
